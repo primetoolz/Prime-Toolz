@@ -1228,68 +1228,68 @@
     </div>
 
     <script>
-        // Tool data
+        // Tool data with HTML file links
         const toolsData = {
             "image": [
-                { name: "Image Converter", desc: "Convert images between JPG, PNG, WebP, SVG, and more formats instantly.", popular: true},
-                { name: "Image Compressor", desc: "Reduce image file size without losing quality for faster web pages.", popular: true },
-                { name: "Image Resizer", desc: "Resize images to any dimension while maintaining aspect ratio.", popular: false },
-                { name: "Image Cropper", desc: "Crop images to focus on specific areas or remove unwanted parts.", popular: false },
-                { name: "Image to Text (OCR)", desc: "Extract text from images using advanced optical character recognition.", popular: true },
-                { name: "Image Rotator/Flipper", desc: "Rotate or flip images horizontally or vertically with one click.", popular: false }
+                { name: "Image Converter", desc: "Convert images between JPG, PNG, WebP, SVG, and more formats instantly.", popular: true, link: "image-converter.html" },
+                { name: "Image Compressor", desc: "Reduce image file size without losing quality for faster web pages.", popular: true, link: "image-compressor.html" },
+                { name: "Image Resizer", desc: "Resize images to any dimension while maintaining aspect ratio.", popular: false, link: "image-resizer.html" },
+                { name: "Image Cropper", desc: "Crop images to focus on specific areas or remove unwanted parts.", popular: false, link: "image-cropper.html" },
+                { name: "Image to Text (OCR)", desc: "Extract text from images using advanced optical character recognition.", popular: true, link: "image-to-text.html" },
+                { name: "Image Rotator/Flipper", desc: "Rotate or flip images horizontally or vertically with one click.", popular: false, link: "image-rotator.html" }
             ],
             "document": [
-                { name: "PDF to Word / Word to PDF", desc: "Convert PDF files to Word documents and vice versa while preserving formatting.", popular: true },
-                { name: "PDF Compressor", desc: "Reduce PDF file size while preserving quality for email and storage.", popular: true },
-                { name: "PDF Merger & Splitter", desc: "Combine multiple PDFs or split large PDFs into smaller ones.", popular: false },
-                { name: "Document Converter", desc: "Convert between various document formats like DOC, DOCX, TXT, RTF, etc.", popular: false },
-                { name: "PDF Lock/Unlock", desc: "Add or remove password protection from PDF files securely.", popular: true },
-                { name: "eSign PDF", desc: "Add digital signatures to PDF documents with legal validity.", popular: false }
+                { name: "PDF to Word / Word to PDF", desc: "Convert PDF files to Word documents and vice versa while preserving formatting.", popular: true, link: "pdf-to-word.html" },
+                { name: "PDF Compressor", desc: "Reduce PDF file size while preserving quality for email and storage.", popular: true, link: "pdf-compressor.html" },
+                { name: "PDF Merger & Splitter", desc: "Combine multiple PDFs or split large PDFs into smaller ones.", popular: false, link: "pdf-merger.html" },
+                { name: "Document Converter", desc: "Convert between various document formats like DOC, DOCX, TXT, RTF, etc.", popular: false, link: "document-converter.html" },
+                { name: "PDF Lock/Unlock", desc: "Add or remove password protection from PDF files securely.", popular: true, link: "pdf-lock.html" },
+                { name: "eSign PDF", desc: "Add digital signatures to PDF documents with legal validity.", popular: false, link: "esign-pdf.html" }
             ],
             "calculator": [
-                { name: "Scientific Calculator", desc: "Advanced calculator for complex mathematical calculations and functions.", popular: false },
-                { name: "Age Calculator", desc: "Calculate age in years, months, and days from birth date accurately.", popular: true },
-                { name: "BMI Calculator", desc: "Calculate Body Mass Index based on height and weight with health insights.", popular: true },
-                { name: "Loan EMI Calculator", desc: "Calculate Equated Monthly Installment for loans with amortization schedule.", popular: true },
-                { name: "GST Calculator", desc: "Calculate Goods and Services Tax amounts for invoices and pricing.", popular: false },
-                { name: "Currency Converter", desc: "Convert between different world currencies with live exchange rates.", popular: true }
+                { name: "Scientific Calculator", desc: "Advanced calculator for complex mathematical calculations and functions.", popular: false, link: "scientific-calculator.html" },
+                { name: "Age Calculator", desc: "Calculate age in years, months, and days from birth date accurately.", popular: true, link: "age-calculator.html" },
+                { name: "BMI Calculator", desc: "Calculate Body Mass Index based on height and weight with health insights.", popular: true, link: "bmi-calculator.html" },
+                { name: "Loan EMI Calculator", desc: "Calculate Equated Monthly Installment for loans with amortization schedule.", popular: true, link: "loan-emi-calculator.html" },
+                { name: "GST Calculator", desc: "Calculate Goods and Services Tax amounts for invoices and pricing.", popular: false, link: "gst-calculator.html" },
+                { name: "Currency Converter", desc: "Convert between different world currencies with live exchange rates.", popular: true, link: "currency-converter.html" }
             ],
             "text": [
-                { name: "Text Case Converter", desc: "Convert text between uppercase, lowercase, title case, sentence case, etc.", popular: false },
-                { name: "Word & Character Counter", desc: "Count words, characters, sentences, and paragraphs in your text.", popular: true },
-                { name: "Remove Duplicate Lines", desc: "Remove duplicate lines from text while keeping unique ones.", popular: false },
-                { name: "Text Sorter", desc: "Sort lines of text alphabetically or numerically in ascending or descending order.", popular: false },
-                { name: "Text Reverser", desc: "Reverse text characters, words, or lines with customizable options.", popular: false },
-                { name: "Text Encryptor/Decryptor", desc: "Encrypt and decrypt text with secure algorithms for privacy.", popular: true }
+                { name: "Text Case Converter", desc: "Convert text between uppercase, lowercase, title case, sentence case, etc.", popular: false, link: "text-case-converter.html" },
+                { name: "Word & Character Counter", desc: "Count words, characters, sentences, and paragraphs in your text.", popular: true, link: "word-counter.html" },
+                { name: "Remove Duplicate Lines", desc: "Remove duplicate lines from text while keeping unique ones.", popular: false, link: "remove-duplicates.html" },
+                { name: "Text Sorter", desc: "Sort lines of text alphabetically or numerically in ascending or descending order.", popular: false, link: "text-sorter.html" },
+                { name: "Text Reverser", desc: "Reverse text characters, words, or lines with customizable options.", popular: false, link: "text-reverser.html" },
+                { name: "Text Encryptor/Decryptor", desc: "Encrypt and decrypt text with secure algorithms for privacy.", popular: true, link: "text-encryptor.html" }
             ],
             "web": [
-                { name: "HTML/CSS/JS Minifier", desc: "Minify HTML, CSS, and JavaScript code to reduce file size for web.", popular: true },
-                { name: "JSON Formatter & Validator", desc: "Format and validate JSON data for readability and debugging.", popular: true },
-                { name: "Base64 Encoder/Decoder", desc: "Encode and decode data to/from Base64 format for web transmission.", popular: false },
-                { name: "URL Encoder/Decoder", desc: "Encode and decode URLs for safe web transmission and API calls.", popular: false },
-                { name: "Color Picker & Converter", desc: "Pick colors and convert between HEX, RGB, HSL, CMYK formats.", popular: true },
-                { name: "Regex Tester", desc: "Test and debug regular expressions with live matching and explanations.", popular: false }
+                { name: "HTML/CSS/JS Minifier", desc: "Minify HTML, CSS, and JavaScript code to reduce file size for web.", popular: true, link: "code-minifier.html" },
+                { name: "JSON Formatter & Validator", desc: "Format and validate JSON data for readability and debugging.", popular: true, link: "json-formatter.html" },
+                { name: "Base64 Encoder/Decoder", desc: "Encode and decode data to/from Base64 format for web transmission.", popular: false, link: "base64-encoder.html" },
+                { name: "URL Encoder/Decoder", desc: "Encode and decode URLs for safe web transmission and API calls.", popular: false, link: "url-encoder.html" },
+                { name: "Color Picker & Converter", desc: "Pick colors and convert between HEX, RGB, HSL, CMYK formats.", popular: true, link: "color-picker.html" },
+                { name: "Regex Tester", desc: "Test and debug regular expressions with live matching and explanations.", popular: false, link: "regex-tester.html" }
             ],
             "color": [
-                { name: "Color Picker from Image", desc: "Extract colors from uploaded images to build color palettes.", popular: true },
-                { name: "HEX to RGB Converter", desc: "Convert HEX color codes to RGB values and vice versa accurately.", popular: false },
-                { name: "Gradient Generator", desc: "Create beautiful CSS gradients with custom colors, angles, and stops.", popular: true },
-                { name: "Contrast Checker", desc: "Check color contrast ratios for web accessibility compliance (WCAG).", popular: false },
-                { name: "Palette Generator", desc: "Generate harmonious color palettes for design projects automatically.", popular: true },
-                { name: "Color Blindness Simulator", desc: "Simulate how colors appear to people with different color blindness.", popular: false }
+                { name: "Color Picker from Image", desc: "Extract colors from uploaded images to build color palettes.", popular: true, link: "color-picker-image.html" },
+                { name: "HEX to RGB Converter", desc: "Convert HEX color codes to RGB values and vice versa accurately.", popular: false, link: "hex-to-rgb.html" },
+                { name: "Gradient Generator", desc: "Create beautiful CSS gradients with custom colors, angles, and stops.", popular: true, link: "gradient-generator.html" },
+                { name: "Contrast Checker", desc: "Check color contrast ratios for web accessibility compliance (WCAG).", popular: false, link: "contrast-checker.html" },
+                { name: "Palette Generator", desc: "Generate harmonious color palettes for design projects automatically.", popular: true, link: "palette-generator.html" },
+                { name: "Color Blindness Simulator", desc: "Simulate how colors appear to people with different color blindness.", popular: false, link: "color-blindness-simulator.html" }
             ],
             "seo": [
-                { name: "Keyword Density Checker", desc: "Analyze keyword density in your content for SEO optimization.", popular: true },
-                { name: "Meta Tag Analyzer", desc: "Check and analyze meta tags for web pages to improve SEO.", popular: false },
-                { name: "Word Counter", desc: "Count words and characters for content optimization and readability.", popular: false }
+                { name: "Keyword Density Checker", desc: "Analyze keyword density in your content for SEO optimization.", popular: true, link: "keyword-density.html" },
+                { name: "Meta Tag Analyzer", desc: "Check and analyze meta tags for web pages to improve SEO.", popular: false, link: "meta-tag-analyzer.html" },
+                { name: "Word Counter", desc: "Count words and characters for content optimization and readability.", popular: false, link: "word-counter-seo.html" }
             ],
             "utility": [
-                { name: "QR Code Generator & Scanner", desc: "Create QR codes and scan them from images with customization.", popular: true },
-                { name: "Barcode Generator", desc: "Generate barcodes in various formats for products and inventory.", popular: false },
-                { name: "UUID Generator", desc: "Generate unique Universal Unique Identifiers for development.", popular: true },
-                { name: "Unit Converter", desc: "Convert between different units of measurement for length, weight, etc.", popular: false },
-                { name: "Time Zone Converter", desc: "Convert time between different time zones worldwide easily.", popular: true },
-                { name: "Random Number/Password Generator", desc: "Generate random numbers and secure passwords with options.", popular: true }
+                { name: "QR Code Generator & Scanner", desc: "Create QR codes and scan them from images with customization.", popular: true, link: "qr-generator.html" },
+                { name: "Barcode Generator", desc: "Generate barcodes in various formats for products and inventory.", popular: false, link: "barcode-generator.html" },
+                { name: "UUID Generator", desc: "Generate unique Universal Unique Identifiers for development.", popular: true, link: "uuid-generator.html" },
+                { name: "Unit Converter", desc: "Convert between different units of measurement for length, weight, etc.", popular: false, link: "unit-converter.html" },
+                { name: "Time Zone Converter", desc: "Convert time between different time zones worldwide easily.", popular: true, link: "timezone-converter.html" },
+                { name: "Random Number/Password Generator", desc: "Generate random numbers and secure passwords with options.", popular: true, link: "password-generator.html" }
             ]
         };
 
@@ -1360,7 +1360,7 @@
             });
         }
 
-        // Generate tools
+        // Generate tools - MODIFIED WITH INDIVIDUAL LINKS
         function generateTools(category) {
             const toolsGrid = document.getElementById('toolsGrid');
             toolsGrid.innerHTML = '';
@@ -1395,7 +1395,7 @@
                     </div>
                     <p class="tool-description">${tool.desc}</p>
                     <div class="tool-footer">
-                        <a href="#" class="tool-button">
+                        <a href="${tool.link}" class="tool-button">
                             Use Tool <i class="fas fa-arrow-right"></i>
                         </a>
                         ${tool.popular ? '<span class="tool-popular">Popular</span>' : ''}
@@ -1405,14 +1405,7 @@
                 toolsGrid.appendChild(toolCard);
             });
             
-            // Add click event to tool buttons
-            document.querySelectorAll('.tool-button').forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const toolName = this.closest('.tool-card').querySelector('.tool-title').textContent;
-                    alert(`Launching "${toolName}" tool...\n\nIn a real implementation, this would open the tool interface.`);
-                });
-            });
+            // Remove the click event that shows alert since we have actual links now
         }
 
         // Generate filter buttons

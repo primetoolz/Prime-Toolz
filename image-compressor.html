@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -199,7 +198,7 @@
       <div class="upload" id="uploadBox">
         <i class="fas fa-image"></i>
         <p>Drag & Drop Image</p>
-        <small>or click to browse (Max 10MB)</small>
+        <small>or click to browse (Max 1GB)</small>
         <input type="file" id="fileInput" accept="image/*" />
       </div>
       <button class="btn" id="browseBtn">Browse File</button>
@@ -266,6 +265,14 @@
   fileInput.onchange = () => {
     const file = fileInput.files[0];
     if(!file) return;
+
+    if(file.size > 1024 * 1024 * 1024){
+      errorMsg.textContent = 'File size must be 1GB or less (browser limits may apply)';
+      errorMsg.style.display = 'block';
+      fileInput.value = '';
+      return;
+    }
+
     const reader = new FileReader();
     reader.onload = e => {
       originalImage = new Image();
